@@ -3,7 +3,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Tabs, Tab } from '@Tab'
 import { List, app, get, post } from '@List'
-import { Form, Text } from '@Form'
+import { Form, Text, Phone } from '@Form'
 
 const tabs = <>
     <Tab
@@ -35,8 +35,8 @@ const tabs = <>
             create={<Form
                 entityType="Phone"
                 inputs={<>
-                    <Text
-                        column="Number"
+                    <Phone
+                        column="PhoneValue"
                         placeholder="Number"
                         required="You have not provided the phone number"
                     />
